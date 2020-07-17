@@ -4,9 +4,9 @@ y lo muestro por 'ID' al presionar el botón 'mostrar'
 */
 function mostrar()
 {
-	var nombreIngresado;//declaracion
+	var nombreIngresado;
 
-	nombreIngresado=prompt("Ingrese su nombre");//carga
+	nombreIngresado=prompt("Ingrese su nombre");
 
 	txtIdNombre.value=nombreIngresado;
 }

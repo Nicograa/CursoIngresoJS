@@ -7,7 +7,7 @@ function mostrar()
 	var nombreIngresado;
 
 	//asigno o cargo la variable
-	nombreIngresado = prompt("Ingrese su nombre", "natalianatalia");
+	nombreIngresado = prompt("Ingrese su nombre", "Nicolas");
     
     //mostrar el valor de la variable
     alert("su nombre es "+nombreIngresado);

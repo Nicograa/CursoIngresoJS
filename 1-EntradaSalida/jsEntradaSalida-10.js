@@ -12,7 +12,7 @@ function mostrarAumento()
     importe=txtIdImporte.value;
     importe=parseInt(importe);
 
-    Descuento=importe*0.25;
+    Descuento=importe*25/100;
 
     resultado=txtIdResultado;
     resultado=parseInt(resultado);

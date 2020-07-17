@@ -11,7 +11,7 @@ function mostrar()
 
   alert("Usted se llama "+nombreIngresado+ " y tiene "+edadIngresada+" años");
 	
-	//testing
+	
 
 	//alert("usted se llama "+nombreIngresado+" y tiene "+edadIngresada+" años");
 

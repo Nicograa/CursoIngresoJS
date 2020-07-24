@@ -33,17 +33,17 @@ function mostrar()
 			if(estadoCivilIngresado=="Soltero")
 		    {
 			    alert("a vivir la vida");
-			}else
+			}else{
 			if (estadoCivilIngresado=="Casado")
 			{
 			 	alert("a disfrutar la pareja");
-			}else
-			if (estadoCivilIngresado=="Divorciado")
-			{
-				alert("a intentarlo nuevamente");
 			}
 		}
-
+		}
+		if(estadoCivilIngresado=="Divorciado")
+		{
+			alert("a intentarlo nuevamente")
+		}
 
 
 

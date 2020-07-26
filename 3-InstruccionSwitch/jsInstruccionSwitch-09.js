@@ -53,10 +53,15 @@ function mostrar()
 					switch(destinoIngresado)
 					{
 						case("Bariloche"):
-						case("Cordoba"):
+						case("Cataratas"):
 						case("Mar del plata"):
 							aumento=10;
 							break;
+						case("Cordoba"):
+							aumento=0;
+							descuento=0
+							break;
+								
 					}	
 			break;
 
@@ -66,13 +71,24 @@ function mostrar()
 	aumentoFinal=estadia*aumento/100+estadia;
 	descuentoFinal=(estadia)-(estadia*descuento/100);
 
-	precioFinal=
+	precioFinal=aumentoFinal || descuentoFinal;
 
+		switch(precioFinal)
+		{
+			case(aumentoFinal):
+				alert("El precio final es: "+aumentoFinal);
+				break;
+			case(descuentoFinal):
+				alert("El precio final es: "+descuentoFinal);
+				break;	
+		}
+	
 		
+}//FIN DE LA FUNCIÓN		
 			
 		
 
-	alert("El precio final es: "+precioFinal);
+	
 
 
 
@@ -173,4 +189,3 @@ function mostrar()
 	
 
 
-}//FIN DE LA FUNCIÓN

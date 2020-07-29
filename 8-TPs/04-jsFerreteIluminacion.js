@@ -23,8 +23,121 @@ function CalcularPrecio ()
 	cantidadLamparas=parseInt(cantidadLamparas);
 
 	marcaLamparas=Marca.value;
+	precioLamparas=cantidadLamparas*35;
 
-		if (cantidadLamparas>5)
+	
+
+	switch(cantidadLamparas)
+	{	
+		case 1:
+		case 2:
+			descuento=0;
+			break;
+		case 3:
+			cantidadLamparas=3;
+			switch(marcaLamparas)
+			{
+				case "ArgentinaLuz":
+					descuento=15;
+					break;
+				case "FelipeLamparas":
+					descuento=10;
+					break;
+				default:
+					descuento=5;
+					break;		
+			}
+			break;
+		case 4:
+			cantidadLamparas=4;
+			switch(marcaLamparas)
+			{
+				case "ArgentinaLuz":
+				case "FelipeLamparas":
+					descuento=25;
+					break;
+				default:
+					descuento=20;
+					break;	
+			}
+			break;
+		case 5:
+			cantidadLamparas=5;
+			switch(marcaLamparas)
+			{
+				case "ArgentinaLuz":
+					descuento=40;
+					break;
+				default:
+					descuento=30;
+					break;		
+			}
+			break;
+		default:
+			descuento=50;
+			break;
+
+
+
+	}
+	descuentoFinal=precioLamparas*descuento/100
+	precioFinal=precioLamparas-descuentoFinal;
+    txtIdprecioDescuento.value=precioFinal;
+	
+	if(precioFinal>119)
+	{
+		impuesto=precioFinal*10/100;
+		ingresoBruto=precioFinal+impuesto;
+		alert("IIBB Usted pago= "+ingresoBruto);
+	}
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+	/*	if (cantidadLamparas>5)
 		{
 			descuento=50;
 		} else 
@@ -84,10 +197,10 @@ function CalcularPrecio ()
 		ingresoBruto=precioFinal+impuesto;
 		alert("IIBB Usted pago= "+ingresoBruto);
 	}
-		
+		*/
 		
 		
 
 
  	
-}
+

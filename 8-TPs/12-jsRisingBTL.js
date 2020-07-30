@@ -13,7 +13,63 @@ function ComenzarIngreso ()
  	var edadIngresada;
  	var sexoIngresado;
  	var estadoCivilIngresado;
+ 	var sueldoIngresado;
+ 	var numeroLegajo;
+ 	var nacionalidad;
 
+ 	//EDAD
+ 	edadIngresada=prompt("Ingrese su edad");
+ 	
+	while(edadIngresada<18 || edadIngresada>90)
+ 	{
+ 		edadIngresada=prompt("Ingrese su edad");
 
+ 	}
 
+ 	//SEXO
+ 	sexoIngresado=prompt("ingrese su sexo");
+	
+	while(sexoIngresado!="f" && sexoIngresado!="m")
+	{
+		sexoIngresado = prompt("ingrese f ó m .");		
+	}	
+
+	//ESTADO CIVIL
+	estadoCivilIngresado=prompt("ingrese su estado civil");
+
+	while(estadoCivilIngresado<0 || estadoCivilIngresado>4)
+	{
+		estadoCivilIngresado=prompt("ingrese su estado civil");
+	}
+
+	//SUELDO
+
+	sueldoIngresado=prompt("Ingrese sueldo bruto");
+	while(sueldoIngresado<8000)
+	{
+		sueldoIngresado=prompt("Ingrese sueldo bruto");
+	}
+
+	//NUMERO LEGAJO 4 CIFRAS 
+
+	numeroLegajo=prompt("Ingrese su numero de legajo");
+	while(numeroLegajo<1000 || numeroLegajo>9999)
+	{
+		numeroLegajo=prompt("Ingrese su numero de legajo");
+	}
+
+	//NACIONALIDAD 
+
+	nacionalidad=prompt("Ingrese Nacionalidad: “a” para argentinos, “e” para extranjeros, “n” para nacionalizados.");
+	while(nacionalidad!="a" && nacionalidad!="e" && nacionalidad!="n")
+	{
+		nacionalidad=prompt("Ingrese Nacionalidad: “a” para argentinos, “e” para extranjeros, “n” para nacionalizados.");
+	}
+
+	txtIdEdad.value=edadIngresada;
+	txtIdSexo.value=sexoIngresado;
+	txtIdEstadoCivil.value=estadoCivilIngresado;
+	txtIdSueldo.value=sueldoIngresado;
+	txtIdLegajo.value=numeroLegajo;
+	txtIdNacionalidad.value=nacionalidad;
 }

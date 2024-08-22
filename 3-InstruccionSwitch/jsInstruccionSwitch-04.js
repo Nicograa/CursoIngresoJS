@@ -1,6 +1,6 @@
 function mostrar()
 {
-	let mes 
+	let mes; 
 
 	mes = document.getElementById("txtIdMes").value;
 

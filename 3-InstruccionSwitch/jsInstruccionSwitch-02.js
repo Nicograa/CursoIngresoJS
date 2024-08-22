@@ -1,7 +1,7 @@
 function mostrar()
 {
 	//tomo el mes
-	let mes 
+	let mes; 
 
 	mes = document.getElementById("txtIdMes").value;
 

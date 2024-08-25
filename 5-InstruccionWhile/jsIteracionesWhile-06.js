@@ -7,11 +7,11 @@ function mostrar()
 
 	while(i < 5){
 
-		numero = parseInt(prompt("Ingrese su numero: "));
+			numero = parseInt(prompt("Ingrese su numero: "));
 
-		acumulador = acumulador + numero;
+			acumulador = acumulador + numero;
 
-		i++;
+			i++;
 
 	}
 
